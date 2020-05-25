@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CSAngularDatingAppUdemy.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace DatingApp.API.Controllers
 {
@@ -10,19 +12,25 @@ namespace DatingApp.API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly DataContext Context;
+        public ValuesController(DataContext context)
+        {
+            Context = context;
+        }
+
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public async Task<IActionResult> GetValues()
         {
-            throw new Exception("Test Exception");
-            return new string[] { "value1", "value2" };
+
+            return Ok( await Context.Values.ToListAsync());
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public async Task<ActionResult> GetValue(int id)
         {
-            return "value";
+            return Ok(await Context.Values.FirstOrDefaultAsync(x => x.Id == id));
         }
 
         // POST api/values
