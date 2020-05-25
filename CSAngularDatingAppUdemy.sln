@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSAngularDatingAppUdemy", "CSAngularDatingAppUdemy\CSAngularDatingAppUdemy.csproj", "{979D06DD-5830-4D7A-8B0E-CB111DFD9BC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{979D06DD-5830-4D7A-8B0E-CB111DFD9BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979D06DD-5830-4D7A-8B0E-CB111DFD9BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979D06DD-5830-4D7A-8B0E-CB111DFD9BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979D06DD-5830-4D7A-8B0E-CB111DFD9BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE10EE4D-2A23-403C-8C53-0A7BF1020289}
+	EndGlobalSection
+EndGlobal
