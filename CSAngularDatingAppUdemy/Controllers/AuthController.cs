@@ -15,7 +15,6 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace CSAngularDatingAppUdemy.Controllers
 {
-    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : Controller
