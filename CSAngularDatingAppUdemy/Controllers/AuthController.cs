@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 using CSAngularDatingAppUdemy.Data;
 using CSAngularDatingAppUdemy.DTOs;
 using CSAngularDatingAppUdemy.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
 namespace CSAngularDatingAppUdemy.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : Controller
